@@ -1,0 +1,198 @@
+---
+
+# EduProgress — Документация по интеграции с БД и изменениям в системе
+
+---
+
+## 1. Подготовка базы данных
+
+### 1.1 Требования
+
+- Microsoft SQL Server 2019+ (или SQL Server Express)
+- База данных должна называться `EduProgress`
+- Существующие таблицы из скриптов `teachers.sql` и `data.sql` должны быть уже применены
+
+### 1.2 Применение дополнительного скрипта
+
+Перед первым запуском приложения выполните скрипт `EduProgress/missing_tables.sql` в SSMS или через `sqlcmd`:
+
+```sql
+sqlcmd -S localhost -E -i "missing_tables.sql"
+```
+
+Скрипт защищён от повторного запуска (`IF NOT EXISTS` / `IF OBJECT_ID(...) IS NULL`) — его можно запускать несколько раз без ошибок.
+
+---
+
+## 2. Настройка строки подключения
+
+Строка подключения задаётся в файле `Services/DbConfig.cs`.
+
+**Вариант A — Windows-аутентификация** (по умолчанию, рекомендуется):
+
+```csharp
+"Server=localhost;Database=EduProgress;Trusted_Connection=True;TrustServerCertificate=True;"
+```
+
+**Вариант B — SQL Server-аутентификация** (раскомментировать в `DbConfig.cs`):
+
+```csharp
+"Server=localhost;Database=EduProgress;User Id=sa;Password=ВашПароль;TrustServerCertificate=True;"
+```
+
+Для другого имени сервера замените `localhost` на имя экземпляра, например `.\SQLEXPRESS` или `SERVER\INSTANCE`.
+
+---
+
+## 3. Что изменилось в приложении
+
+### 3.1 Новый NuGet-пакет
+
+В `EduProgress.csproj` добавлена зависимость:
+
+```xml
+<PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.2" />
+```
+
+Используется современный драйвер Microsoft (не `System.Data.SqlClient`), поддерживающий .NET 6.
+
+### 3.2 Новые файлы сервисного слоя
+
+| Файл | Назначение |
+|------|-----------|
+| `Services/DbConfig.cs` | Строка подключения, метод `TestConnection()` |
+| `Services/DatabaseService.cs` | Все запросы к БД — заменяет `MockDataService` |
+
+`DatabaseService` реализует ADO.NET через `SqlConnection` / `SqlCommand` / `SqlDataReader`. Все SQL-запросы используют параметры (`@param`) — инъекции исключены.
+
+### 3.3 Логика сессии
+
+В `AppSession.cs` поле `Data` (тип `MockDataService`) заменено на `Db` (тип `DatabaseService`):
+
+```csharp
+public static DatabaseService Db { get; } = new DatabaseService();
+```
+
+Все экраны теперь обращаются к БД через `AppSession.Db.*`.
+
+### 3.4 Маппинг ролей
+
+Роли в БД хранятся строками (`roles.name`). Маппинг в enum:
+
+| Строка в БД | Enum `UserRole` |
+|------------|----------------|
+| содержит `"Администратор"` | `Administrator` |
+| содержит `"Методист"` | `Methodist` |
+| всё остальное | `Teacher` |
+
+### 3.5 Авто-завершение курса
+
+При отметке урока как выполненного (`CompleteLesson`) приложение автоматически проверяет, все ли уроки курса пройдены, и если да — переводит запись (`enrollments`) в статус `"Завершён"`. Реализовано через SQL `MERGE` без N+1 запросов.
+
+---
+
+## 4. Изменения схемы базы данных
+
+### 4.1 Новые столбцы в существующих таблицах
+
+**Таблица `courses`**
+
+| Столбец | Тип | По умолчанию | Описание |
+|---------|-----|-------------|---------|
+| `category` | `NVARCHAR(100)` | `'Общий'` | Категория курса для фильтрации в каталоге |
+| `is_new` | `BIT` | `0` | Флаг «новинки» — отображает бейдж на карточке |
+
+**Таблица `notifications`**
+
+| Столбец | Тип | По умолчанию | Описание |
+|---------|-----|-------------|---------|
+| `title` | `NVARCHAR(200)` | `NULL` | Заголовок уведомления |
+| `category` | `NVARCHAR(30)` | `'Курс'` | Тип: `'Курс'`, `'Напоминание'`, `'Система'` |
+
+**Таблица `users`**
+
+| Столбец | Тип | По умолчанию | Описание |
+|---------|-----|-------------|---------|
+| `is_active` | `BIT` | `1` | Флаг активности — неактивные не могут входить |
+
+### 4.2 Новые таблицы
+
+**`lesson_resources`** — файлы и ссылки, прикреплённые к уроку
+
+```sql
+CREATE TABLE lesson_resources (
+    id        INT PRIMARY KEY IDENTITY(1,1),
+    lesson_id INT NOT NULL,
+    name      NVARCHAR(200) NOT NULL,
+    type      NVARCHAR(30)  NOT NULL DEFAULT 'pdf',  -- pdf | video | link
+    url       NVARCHAR(500),
+    CONSTRAINT FK_resources_lessons FOREIGN KEY (lesson_id)
+        REFERENCES lessons(id) ON DELETE CASCADE
+);
+```
+
+**`faq`** — база знаний системы
+
+```sql
+CREATE TABLE faq (
+    id           INT PRIMARY KEY IDENTITY(1,1),
+    category     NVARCHAR(30)  NOT NULL,   -- course | system | technical
+    question     NVARCHAR(500) NOT NULL,
+    answer       NVARCHAR(MAX) NOT NULL,
+    order_number INT           NOT NULL DEFAULT 1
+);
+```
+
+---
+
+## 5. Реализованные операции с БД по модулям
+
+| Экран | Операции |
+|-------|---------|
+| Авторизация | `SELECT` пользователя по логину/паролю, `UPDATE last_login` |
+| Дашборд | `SELECT` курсов с прогрессом, последних уведомлений |
+| Каталог | `SELECT` всех курсов с фильтрацией, `INSERT` в `enrollments` |
+| Страница курса | `SELECT` модулей и уроков курса |
+| Урок | `MERGE` в `lesson_completions`, авто-обновление `enrollments` |
+| Прогресс | `SELECT` enrolled-курсов + кол-во пройденных уроков |
+| Уведомления | `SELECT`, `UPDATE is_read`, `UPDATE` всех уведомлений |
+| FAQ | `SELECT` из таблицы `faq` |
+| Отчёты | `SELECT` агрегированных данных по курсам и пользователям |
+| Пользователи | `SELECT` всех пользователей, `UPDATE` данных пользователя |
+| Редактор курсов | Полный CRUD: `courses`, `modules`, `lessons`, `lesson_resources` |
+
+---
+
+## 6. Структура файлов после всех изменений
+
+```
+EduProgress/
+├── EduProgress.csproj            ← добавлен Microsoft.Data.SqlClient
+├── missing_tables.sql            ← скрипт миграции (запустить 1 раз)
+├── AppSession.cs                 ← поле Db: DatabaseService
+├── Models/
+│   ├── User.cs                   ← добавлено поле Login, IsActive
+│   └── FaqItem.cs                ← новая модель
+├── Services/
+│   ├── DbConfig.cs               ← строка подключения
+│   └── DatabaseService.cs        ← все запросы к БД
+├── Forms/
+│   ├── LoginForm.cs + .Designer.cs
+│   └── MainForm.cs  + .Designer.cs
+├── Controls/
+│   ├── SidebarControl.cs + .Designer.cs
+│   └── HeaderControl.cs  + .Designer.cs
+└── Pages/
+    ├── DashboardPage.cs      + .Designer.cs
+    ├── CatalogPage.cs        + .Designer.cs
+    ├── CoursePage.cs         + .Designer.cs
+    ├── LessonPage.cs         + .Designer.cs
+    ├── ProgressPage.cs       + .Designer.cs
+    ├── NotificationsPage.cs  + .Designer.cs
+    ├── FaqPage.cs            + .Designer.cs
+    ├── ReportsPage.cs        + .Designer.cs
+    ├── UsersPage.cs          + .Designer.cs
+    └── CourseEditorPage.cs   + .Designer.cs
+```
+
+Каждый экран разделён на два partial-класса: логика в `.cs`, объявление контролов в `.Designer.cs`.

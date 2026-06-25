@@ -1,0 +1,123 @@
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\obj\Debug\net6.0-windows\EduProgress.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\obj\Debug\net6.0-windows\EduProgress.AssemblyInfoInputs.cache
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\obj\Debug\net6.0-windows\EduProgress.AssemblyInfo.cs
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\obj\Debug\net6.0-windows\EduProgress.csproj.CoreCompileInputs.cache
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\bin\Debug\net6.0-windows\EduProgress.exe
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\bin\Debug\net6.0-windows\EduProgress.deps.json
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\bin\Debug\net6.0-windows\EduProgress.runtimeconfig.json
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\bin\Debug\net6.0-windows\EduProgress.dll
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\bin\Debug\net6.0-windows\EduProgress.pdb
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\obj\Debug\net6.0-windows\EduProgress.dll
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\obj\Debug\net6.0-windows\refint\EduProgress.dll
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\obj\Debug\net6.0-windows\EduProgress.pdb
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\obj\Debug\net6.0-windows\EduProgress.genruntimeconfig.cache
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\obj\Debug\net6.0-windows\ref\EduProgress.dll
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\obj\Debug\net6.0-windows\EduProgress.csproj.AssemblyReference.cache
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\bin\Debug\net6.0-windows\Azure.Core.dll
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\bin\Debug\net6.0-windows\Azure.Identity.dll
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\bin\Debug\net6.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\bin\Debug\net6.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\bin\Debug\net6.0-windows\Microsoft.Identity.Client.dll
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\bin\Debug\net6.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\bin\Debug\net6.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\bin\Debug\net6.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\bin\Debug\net6.0-windows\System.ClientModel.dll
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\bin\Debug\net6.0-windows\System.Configuration.ConfigurationManager.dll
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\bin\Debug\net6.0-windows\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\bin\Debug\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\bin\Debug\net6.0-windows\System.Memory.Data.dll
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\bin\Debug\net6.0-windows\System.Runtime.Caching.dll
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\bin\Debug\net6.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\bin\Debug\net6.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\bin\Debug\net6.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\bin\Debug\net6.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\bin\Debug\net6.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\bin\Debug\net6.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\bin\Debug\net6.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\bin\Debug\net6.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\bin\Debug\net6.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\bin\Debug\net6.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\bin\Debug\net6.0-windows\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\bin\Debug\net6.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\bin\Debug\net6.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\obj\Debug\net6.0-windows\EduProgr.F2510C64.Up2Date
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\obj\Debug\net6.0-windows\EduProgress.Forms.LoginForm.resources
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\obj\Debug\net6.0-windows\EduProgress.Pages.BasePage.resources
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\obj\Debug\net6.0-windows\EduProgress.Pages.CatalogPage.resources
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\obj\Debug\net6.0-windows\EduProgress.Pages.CourseEditorPage.resources
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\obj\Debug\net6.0-windows\EduProgress.Pages.ProgressPage.resources
+C:\Users\Евгений\Downloads\dawa\EduProgress\EduProgress\obj\Debug\net6.0-windows\EduProgress.csproj.GenerateResource.cache
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\bin\Debug\net6.0-windows\EduProgress.exe
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\bin\Debug\net6.0-windows\EduProgress.deps.json
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\bin\Debug\net6.0-windows\EduProgress.runtimeconfig.json
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\bin\Debug\net6.0-windows\EduProgress.dll
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\bin\Debug\net6.0-windows\EduProgress.pdb
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\bin\Debug\net6.0-windows\Azure.Core.dll
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\bin\Debug\net6.0-windows\Azure.Identity.dll
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\bin\Debug\net6.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\bin\Debug\net6.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\bin\Debug\net6.0-windows\Microsoft.Identity.Client.dll
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\bin\Debug\net6.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\bin\Debug\net6.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\bin\Debug\net6.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\bin\Debug\net6.0-windows\System.ClientModel.dll
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\bin\Debug\net6.0-windows\System.Configuration.ConfigurationManager.dll
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\bin\Debug\net6.0-windows\System.Diagnostics.DiagnosticSource.dll
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\bin\Debug\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\bin\Debug\net6.0-windows\System.Memory.Data.dll
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\bin\Debug\net6.0-windows\System.Runtime.Caching.dll
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\bin\Debug\net6.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\bin\Debug\net6.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\bin\Debug\net6.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\bin\Debug\net6.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\bin\Debug\net6.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\bin\Debug\net6.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\bin\Debug\net6.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\bin\Debug\net6.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\bin\Debug\net6.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\bin\Debug\net6.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\bin\Debug\net6.0-windows\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\bin\Debug\net6.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\bin\Debug\net6.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\obj\Debug\net6.0-windows\EduProgress.csproj.AssemblyReference.cache
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\obj\Debug\net6.0-windows\EduProgress.Forms.LoginForm.resources
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\obj\Debug\net6.0-windows\EduProgress.Pages.BasePage.resources
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\obj\Debug\net6.0-windows\EduProgress.Pages.CatalogPage.resources
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\obj\Debug\net6.0-windows\EduProgress.Pages.CourseEditorPage.resources
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\obj\Debug\net6.0-windows\EduProgress.Pages.ProgressPage.resources
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\obj\Debug\net6.0-windows\EduProgress.csproj.GenerateResource.cache
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\obj\Debug\net6.0-windows\EduProgress.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\obj\Debug\net6.0-windows\EduProgress.AssemblyInfoInputs.cache
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\obj\Debug\net6.0-windows\EduProgress.AssemblyInfo.cs
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\obj\Debug\net6.0-windows\EduProgress.csproj.CoreCompileInputs.cache
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\obj\Debug\net6.0-windows\EduProgr.F2510C64.Up2Date
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\obj\Debug\net6.0-windows\EduProgress.dll
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\obj\Debug\net6.0-windows\refint\EduProgress.dll
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\obj\Debug\net6.0-windows\EduProgress.pdb
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\obj\Debug\net6.0-windows\EduProgress.genruntimeconfig.cache
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\obj\Debug\net6.0-windows\ref\EduProgress.dll
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\obj\Debug\net6.0-windows\EduProgress.Forms.MainForm.resources
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\obj\Debug\net6.0-windows\EduProgress.Controls.HeaderControl.resources
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\obj\Debug\net6.0-windows\EduProgress.Controls.SidebarControl.resources
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\obj\Debug\net6.0-windows\EduProgress.Pages.CoursePage.resources
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\obj\Debug\net6.0-windows\EduProgress.Pages.LessonPage.resources
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\obj\Debug\net6.0-windows\EduProgress.Pages.FaqPage.resources
+C:\Users\kalas\OneDrive\Рабочий стол\EduProgress\EduProgress\obj\Debug\net6.0-windows\EduProgress.Pages.NotificationsPage.resources
